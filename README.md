@@ -8,6 +8,10 @@ This repository is publication-only and does not contain the private implementat
 - Quality benchmark reports
 - Schema result files
 
+## Local-eligible benchmark plan
+
+- LOCAL_ELIGIBLE_BENCHMARK_PLAN.md
+
 ## Routing policy findings
 
 - ROUTING_POLICY_FINDINGS.md
