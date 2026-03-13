@@ -8,6 +8,10 @@ This repository is publication-only and does not contain the private implementat
 - Quality benchmark reports
 - Schema result files
 
+## Public summary
+
+- QUALITY_SUMMARY.md
+
 ## Latest valid quality benchmark release
 
 The latest valid quality benchmark release was generated from a real local backend run and compared against OpenAI through the same EP API surface.
