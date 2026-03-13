@@ -8,6 +8,10 @@ This repository is publication-only and does not contain the private implementat
 - Quality benchmark reports
 - Schema result files
 
+## Routing policy findings
+
+- ROUTING_POLICY_FINDINGS.md
+
 ## Public summary
 
 - QUALITY_SUMMARY.md
