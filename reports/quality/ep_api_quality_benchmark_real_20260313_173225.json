@@ -1,0 +1,695 @@
+{
+  "generated_at_epoch": 1773412481,
+  "provider_totals": {
+    "local": {
+      "runs": 10,
+      "successes": 10,
+      "avg_quality_score": 24.5,
+      "avg_latency_ms": 7178.5,
+      "avg_total_tokens": 292.0,
+      "avg_content_words": 150.6
+    },
+    "openai": {
+      "runs": 10,
+      "successes": 10,
+      "avg_quality_score": 26.2,
+      "avg_latency_ms": 4921.7,
+      "avg_total_tokens": 293.4,
+      "avg_content_words": 157.1
+    }
+  },
+  "pairwise": [
+    {
+      "prompt_id": "p01_structure",
+      "local_quality": 23,
+      "openai_quality": 25,
+      "quality_winner": "openai",
+      "local_latency_ms": 2468,
+      "openai_latency_ms": 2870,
+      "faster_provider": "local"
+    },
+    {
+      "prompt_id": "p02_latency_usage",
+      "local_quality": 25,
+      "openai_quality": 25,
+      "quality_winner": "tie",
+      "local_latency_ms": 9463,
+      "openai_latency_ms": 4202,
+      "faster_provider": "openai"
+    },
+    {
+      "prompt_id": "p03_finance_control",
+      "local_quality": 24,
+      "openai_quality": 25,
+      "quality_winner": "openai",
+      "local_latency_ms": 9455,
+      "openai_latency_ms": 5725,
+      "faster_provider": "openai"
+    },
+    {
+      "prompt_id": "p04_executive_summary",
+      "local_quality": 24,
+      "openai_quality": 28,
+      "quality_winner": "openai",
+      "local_latency_ms": 2721,
+      "openai_latency_ms": 3985,
+      "faster_provider": "local"
+    },
+    {
+      "prompt_id": "p05_trace_stability",
+      "local_quality": 27,
+      "openai_quality": 28,
+      "quality_winner": "openai",
+      "local_latency_ms": 6320,
+      "openai_latency_ms": 6748,
+      "faster_provider": "local"
+    },
+    {
+      "prompt_id": "p06_domain_routing",
+      "local_quality": 25,
+      "openai_quality": 25,
+      "quality_winner": "tie",
+      "local_latency_ms": 9583,
+      "openai_latency_ms": 6111,
+      "faster_provider": "openai"
+    },
+    {
+      "prompt_id": "p07_short_final",
+      "local_quality": 21,
+      "openai_quality": 23,
+      "quality_winner": "openai",
+      "local_latency_ms": 4493,
+      "openai_latency_ms": 2323,
+      "faster_provider": "openai"
+    },
+    {
+      "prompt_id": "p08_deep_comparison",
+      "local_quality": 27,
+      "openai_quality": 28,
+      "quality_winner": "openai",
+      "local_latency_ms": 11759,
+      "openai_latency_ms": 6188,
+      "faster_provider": "openai"
+    },
+    {
+      "prompt_id": "p09_public_summary",
+      "local_quality": 22,
+      "openai_quality": 28,
+      "quality_winner": "openai",
+      "local_latency_ms": 3330,
+      "openai_latency_ms": 4557,
+      "faster_provider": "local"
+    },
+    {
+      "prompt_id": "p10_quality_focus",
+      "local_quality": 27,
+      "openai_quality": 27,
+      "quality_winner": "tie",
+      "local_latency_ms": 12193,
+      "openai_latency_ms": 6508,
+      "faster_provider": "openai"
+    }
+  ],
+  "results": [
+    {
+      "prompt_id": "p01_structure",
+      "provider": "local",
+      "result": {
+        "success": true,
+        "http_status": 200,
+        "wall_ms": 2480,
+        "latency_ms": 2468,
+        "provider_selected": "local",
+        "provider_model": "qwen2.5:3b",
+        "provider_simulated": false,
+        "routing_path": "standard_response",
+        "response_type": "analysis",
+        "total_tokens": 181,
+        "content_words": 55,
+        "content_preview": "The Energetic Paradigm (EP) API employs a shared orchestration core that serves as the backbone, while provider-specific adapters are utilized to integrate and customize the API for different service providers. This arch",
+        "scores": {
+          "factual_correctness": 5,
+          "structure": 4,
+          "completeness": 4,
+          "keyword_coverage": 3,
+          "hallucination_risk": 5,
+          "executive_usefulness": 2,
+          "response_type_match": 5,
+          "total_quality_score": 23
+        },
+        "error": null
+      }
+    },
+    {
+      "prompt_id": "p01_structure",
+      "provider": "openai",
+      "result": {
+        "success": true,
+        "http_status": 200,
+        "wall_ms": 2877,
+        "latency_ms": 2870,
+        "provider_selected": "openai",
+        "provider_model": "gpt-5.4",
+        "provider_simulated": false,
+        "routing_path": "standard_response",
+        "response_type": "analysis",
+        "total_tokens": 177,
+        "content_words": 66,
+        "content_preview": "Yes. The EP API uses a shared orchestration core that handles common request flow, normalization, routing, safety, and response shaping, while provider-specific adapters translate between that core and each underlying mo",
+        "scores": {
+          "factual_correctness": 5,
+          "structure": 5,
+          "completeness": 4,
+          "keyword_coverage": 4,
+          "hallucination_risk": 5,
+          "executive_usefulness": 2,
+          "response_type_match": 5,
+          "total_quality_score": 25
+        },
+        "error": null
+      }
+    },
+    {
+      "prompt_id": "p02_latency_usage",
+      "provider": "local",
+      "result": {
+        "success": true,
+        "http_status": 200,
+        "wall_ms": 9483,
+        "latency_ms": 9463,
+        "provider_selected": "local",
+        "provider_model": "qwen2.5:3b",
+        "provider_simulated": false,
+        "routing_path": "ep_deep_reasoning",
+        "response_type": "analysis",
+        "total_tokens": 387,
+        "content_words": 235,
+        "content_preview": "In the Energetic Paradigm (EP) API, latency reporting and token accounting serve distinct purposes but are both critical for the efficient operation and monitoring of the API.  **Latency Reporting:** Latency reporting in",
+        "scores": {
+          "factual_correctness": 5,
+          "structure": 5,
+          "completeness": 5,
+          "keyword_coverage": 3,
+          "hallucination_risk": 5,
+          "executive_usefulness": 2,
+          "response_type_match": 5,
+          "total_quality_score": 25
+        },
+        "error": null
+      }
+    },
+    {
+      "prompt_id": "p02_latency_usage",
+      "provider": "openai",
+      "result": {
+        "success": true,
+        "http_status": 200,
+        "wall_ms": 4214,
+        "latency_ms": 4202,
+        "provider_selected": "openai",
+        "provider_model": "gpt-5.4",
+        "provider_simulated": false,
+        "routing_path": "ep_deep_reasoning",
+        "response_type": "analysis",
+        "total_tokens": 234,
+        "content_words": 116,
+        "content_preview": "Latency reporting and token accounting in the EP API differ in purpose:  - Latency reporting tells you how long the request took. It is operational metadata, useful for performance monitoring, debugging, and user experie",
+        "scores": {
+          "factual_correctness": 5,
+          "structure": 5,
+          "completeness": 5,
+          "keyword_coverage": 3,
+          "hallucination_risk": 5,
+          "executive_usefulness": 2,
+          "response_type_match": 5,
+          "total_quality_score": 25
+        },
+        "error": null
+      }
+    },
+    {
+      "prompt_id": "p03_finance_control",
+      "provider": "local",
+      "result": {
+        "success": true,
+        "http_status": 200,
+        "wall_ms": 9473,
+        "latency_ms": 9455,
+        "provider_selected": "local",
+        "provider_model": "qwen2.5:3b",
+        "provider_simulated": false,
+        "routing_path": "domain_specific_path",
+        "response_type": "analysis",
+        "total_tokens": 390,
+        "content_words": 240,
+        "content_preview": "In the realm of finance systems, orchestration control and provider adapters serve distinct yet complementary roles in ensuring seamless and secure integration of various financial services and applications.  Orchestrati",
+        "scores": {
+          "factual_correctness": 5,
+          "structure": 4,
+          "completeness": 5,
+          "keyword_coverage": 3,
+          "hallucination_risk": 5,
+          "executive_usefulness": 2,
+          "response_type_match": 5,
+          "total_quality_score": 24
+        },
+        "error": null
+      }
+    },
+    {
+      "prompt_id": "p03_finance_control",
+      "provider": "openai",
+      "result": {
+        "success": true,
+        "http_status": 200,
+        "wall_ms": 5733,
+        "latency_ms": 5725,
+        "provider_selected": "openai",
+        "provider_model": "gpt-5.4",
+        "provider_simulated": false,
+        "routing_path": "domain_specific_path",
+        "response_type": "analysis",
+        "total_tokens": 369,
+        "content_words": 213,
+        "content_preview": "Orchestration control and provider adapters serve different roles in a finance-safe architecture:  1. Orchestration control - Acts as the decision and workflow layer. - Determines which provider to call, in what order, u",
+        "scores": {
+          "factual_correctness": 5,
+          "structure": 5,
+          "completeness": 5,
+          "keyword_coverage": 3,
+          "hallucination_risk": 5,
+          "executive_usefulness": 2,
+          "response_type_match": 5,
+          "total_quality_score": 25
+        },
+        "error": null
+      }
+    },
+    {
+      "prompt_id": "p04_executive_summary",
+      "provider": "local",
+      "result": {
+        "success": true,
+        "http_status": 200,
+        "wall_ms": 2729,
+        "latency_ms": 2721,
+        "provider_selected": "local",
+        "provider_model": "qwen2.5:3b",
+        "provider_simulated": false,
+        "routing_path": "standard_response",
+        "response_type": "final_answer",
+        "total_tokens": 172,
+        "content_words": 50,
+        "content_preview": "The EP API implementation audit has validated several key aspects of the Energetic Paradigm API, including successful integration with key systems, robust security measures in place, and positive user feedback indicating",
+        "scores": {
+          "factual_correctness": 5,
+          "structure": 3,
+          "completeness": 4,
+          "keyword_coverage": 2,
+          "hallucination_risk": 5,
+          "executive_usefulness": 5,
+          "response_type_match": 5,
+          "total_quality_score": 24
+        },
+        "error": null
+      }
+    },
+    {
+      "prompt_id": "p04_executive_summary",
+      "provider": "openai",
+      "result": {
+        "success": true,
+        "http_status": 200,
+        "wall_ms": 3996,
+        "latency_ms": 3985,
+        "provider_selected": "openai",
+        "provider_model": "gpt-5.4",
+        "provider_simulated": false,
+        "routing_path": "standard_response",
+        "response_type": "final_answer",
+        "total_tokens": 253,
+        "content_words": 115,
+        "content_preview": "Executive Summary  Validated in the EP API implementation audit so far:  - Core answer-layer behavior is correctly configured and active. - Response policy is enforced as specified:   - Mode: standard   - Depth: short   ",
+        "scores": {
+          "factual_correctness": 5,
+          "structure": 5,
+          "completeness": 5,
+          "keyword_coverage": 3,
+          "hallucination_risk": 5,
+          "executive_usefulness": 5,
+          "response_type_match": 5,
+          "total_quality_score": 28
+        },
+        "error": null
+      }
+    },
+    {
+      "prompt_id": "p05_trace_stability",
+      "provider": "local",
+      "result": {
+        "success": true,
+        "http_status": 200,
+        "wall_ms": 6330,
+        "latency_ms": 6320,
+        "provider_selected": "local",
+        "provider_model": "qwen2.5:3b",
+        "provider_simulated": false,
+        "routing_path": "ep_deep_reasoning",
+        "response_type": "analysis",
+        "total_tokens": 323,
+        "content_words": 177,
+        "content_preview": "When a prompt is sent to both a local provider and an OpenAI provider, certain response fields should remain stable to ensure consistency and reliability across different systems. Here are the key response fields that sh",
+        "scores": {
+          "factual_correctness": 5,
+          "structure": 5,
+          "completeness": 5,
+          "keyword_coverage": 3,
+          "hallucination_risk": 5,
+          "executive_usefulness": 4,
+          "response_type_match": 5,
+          "total_quality_score": 27
+        },
+        "error": null
+      }
+    },
+    {
+      "prompt_id": "p05_trace_stability",
+      "provider": "openai",
+      "result": {
+        "success": true,
+        "http_status": 200,
+        "wall_ms": 6760,
+        "latency_ms": 6748,
+        "provider_selected": "openai",
+        "provider_model": "gpt-5.4",
+        "provider_simulated": false,
+        "routing_path": "ep_deep_reasoning",
+        "response_type": "analysis",
+        "total_tokens": 370,
+        "content_words": 223,
+        "content_preview": "When the same prompt is sent through both local and OpenAI providers, the fields that should remain stable are the ones that define the request’s semantic identity and expected contract, not the provider-specific executi",
+        "scores": {
+          "factual_correctness": 5,
+          "structure": 5,
+          "completeness": 5,
+          "keyword_coverage": 4,
+          "hallucination_risk": 5,
+          "executive_usefulness": 4,
+          "response_type_match": 5,
+          "total_quality_score": 28
+        },
+        "error": null
+      }
+    },
+    {
+      "prompt_id": "p06_domain_routing",
+      "provider": "local",
+      "result": {
+        "success": true,
+        "http_status": 200,
+        "wall_ms": 9609,
+        "latency_ms": 9583,
+        "provider_selected": "local",
+        "provider_model": "qwen2.5:3b",
+        "provider_simulated": false,
+        "routing_path": "domain_specific_path",
+        "response_type": "analysis",
+        "total_tokens": 391,
+        "content_words": 221,
+        "content_preview": "A domain-specific request in the finance domain may follow a different routing path than a standard short request due to several factors that require more complex processing and specialized handling. Here’s an analysis o",
+        "scores": {
+          "factual_correctness": 5,
+          "structure": 5,
+          "completeness": 5,
+          "keyword_coverage": 3,
+          "hallucination_risk": 5,
+          "executive_usefulness": 2,
+          "response_type_match": 5,
+          "total_quality_score": 25
+        },
+        "error": null
+      }
+    },
+    {
+      "prompt_id": "p06_domain_routing",
+      "provider": "openai",
+      "result": {
+        "success": true,
+        "http_status": 200,
+        "wall_ms": 6123,
+        "latency_ms": 6111,
+        "provider_selected": "openai",
+        "provider_model": "gpt-5.4",
+        "provider_simulated": false,
+        "routing_path": "domain_specific_path",
+        "response_type": "analysis",
+        "total_tokens": 369,
+        "content_words": 222,
+        "content_preview": "A domain-specific request may follow a different routing path than a standard short request because the system is optimizing for accuracy, relevance, and efficiency.  1. Specialized expertise A domain-specific request, s",
+        "scores": {
+          "factual_correctness": 5,
+          "structure": 5,
+          "completeness": 5,
+          "keyword_coverage": 3,
+          "hallucination_risk": 5,
+          "executive_usefulness": 2,
+          "response_type_match": 5,
+          "total_quality_score": 25
+        },
+        "error": null
+      }
+    },
+    {
+      "prompt_id": "p07_short_final",
+      "provider": "local",
+      "result": {
+        "success": true,
+        "http_status": 200,
+        "wall_ms": 4509,
+        "latency_ms": 4493,
+        "provider_selected": "local",
+        "provider_model": "qwen2.5:3b",
+        "provider_simulated": false,
+        "routing_path": "standard_response",
+        "response_type": "final_answer",
+        "total_tokens": 155,
+        "content_words": 35,
+        "content_preview": "Provider-independent orchestration in the Energetic Paradigm API means that the orchestration process can work seamlessly across different service providers without being tied to any specific vendor, ensuring flexibility",
+        "scores": {
+          "factual_correctness": 5,
+          "structure": 3,
+          "completeness": 3,
+          "keyword_coverage": 3,
+          "hallucination_risk": 5,
+          "executive_usefulness": 2,
+          "response_type_match": 5,
+          "total_quality_score": 21
+        },
+        "error": null
+      }
+    },
+    {
+      "prompt_id": "p07_short_final",
+      "provider": "openai",
+      "result": {
+        "success": true,
+        "http_status": 200,
+        "wall_ms": 2334,
+        "latency_ms": 2323,
+        "provider_selected": "openai",
+        "provider_model": "gpt-5.4",
+        "provider_simulated": false,
+        "routing_path": "standard_response",
+        "response_type": "final_answer",
+        "total_tokens": 158,
+        "content_words": 54,
+        "content_preview": "Provider-independent orchestration in the EP API means you can define one workflow or integration pattern and run it across different AI or infrastructure providers without rewriting your application for each vendor. In ",
+        "scores": {
+          "factual_correctness": 5,
+          "structure": 4,
+          "completeness": 4,
+          "keyword_coverage": 3,
+          "hallucination_risk": 5,
+          "executive_usefulness": 2,
+          "response_type_match": 5,
+          "total_quality_score": 23
+        },
+        "error": null
+      }
+    },
+    {
+      "prompt_id": "p08_deep_comparison",
+      "provider": "local",
+      "result": {
+        "success": true,
+        "http_status": 200,
+        "wall_ms": 11780,
+        "latency_ms": 11759,
+        "provider_selected": "local",
+        "provider_model": "qwen2.5:3b",
+        "provider_simulated": false,
+        "routing_path": "ep_deep_reasoning",
+        "response_type": "analysis",
+        "total_tokens": 394,
+        "content_words": 233,
+        "content_preview": "Certainly, I will provide a deeper comparison of route handling, provider dispatch, response building, and fallback logic in the Energetic Paradigm (EP) API, focusing on their roles and how they interact within the API's",
+        "scores": {
+          "factual_correctness": 5,
+          "structure": 5,
+          "completeness": 5,
+          "keyword_coverage": 4,
+          "hallucination_risk": 4,
+          "executive_usefulness": 4,
+          "response_type_match": 5,
+          "total_quality_score": 27
+        },
+        "error": null
+      }
+    },
+    {
+      "prompt_id": "p08_deep_comparison",
+      "provider": "openai",
+      "result": {
+        "success": true,
+        "http_status": 200,
+        "wall_ms": 6212,
+        "latency_ms": 6188,
+        "provider_selected": "openai",
+        "provider_model": "gpt-5.4",
+        "provider_simulated": false,
+        "routing_path": "ep_deep_reasoning",
+        "response_type": "analysis",
+        "total_tokens": 373,
+        "content_words": 207,
+        "content_preview": "Below is a deeper, system-level comparison of the four core stages in the EP API request lifecycle:  1. route handling 2. provider dispatch 3. response building 4. fallback logic  I’ll compare them by purpose, inputs, de",
+        "scores": {
+          "factual_correctness": 5,
+          "structure": 5,
+          "completeness": 5,
+          "keyword_coverage": 4,
+          "hallucination_risk": 5,
+          "executive_usefulness": 4,
+          "response_type_match": 5,
+          "total_quality_score": 28
+        },
+        "error": null
+      }
+    },
+    {
+      "prompt_id": "p09_public_summary",
+      "provider": "local",
+      "result": {
+        "success": true,
+        "http_status": 200,
+        "wall_ms": 3344,
+        "latency_ms": 3330,
+        "provider_selected": "local",
+        "provider_model": "qwen2.5:3b",
+        "provider_simulated": false,
+        "routing_path": "standard_response",
+        "response_type": "final_answer",
+        "total_tokens": 133,
+        "content_words": 20,
+        "content_preview": "Certainly, please provide the benchmark result details so I can create a public-safe summary without revealing any private implementation specifics.",
+        "scores": {
+          "factual_correctness": 5,
+          "structure": 3,
+          "completeness": 3,
+          "keyword_coverage": 3,
+          "hallucination_risk": 4,
+          "executive_usefulness": 4,
+          "response_type_match": 5,
+          "total_quality_score": 22
+        },
+        "error": null
+      }
+    },
+    {
+      "prompt_id": "p09_public_summary",
+      "provider": "openai",
+      "result": {
+        "success": true,
+        "http_status": 200,
+        "wall_ms": 4568,
+        "latency_ms": 4557,
+        "provider_selected": "openai",
+        "provider_model": "gpt-5.4",
+        "provider_simulated": false,
+        "routing_path": "standard_response",
+        "response_type": "final_answer",
+        "total_tokens": 260,
+        "content_words": 136,
+        "content_preview": "Public-safe benchmark summary:  - The benchmark completed successfully and produced measurable performance results. - Overall behavior was stable across the tested scenarios, with no critical failures observed. - Results",
+        "scores": {
+          "factual_correctness": 5,
+          "structure": 5,
+          "completeness": 5,
+          "keyword_coverage": 3,
+          "hallucination_risk": 5,
+          "executive_usefulness": 5,
+          "response_type_match": 5,
+          "total_quality_score": 28
+        },
+        "error": null
+      }
+    },
+    {
+      "prompt_id": "p10_quality_focus",
+      "provider": "local",
+      "result": {
+        "success": true,
+        "http_status": 200,
+        "wall_ms": 12211,
+        "latency_ms": 12193,
+        "provider_selected": "local",
+        "provider_model": "qwen2.5:3b",
+        "provider_simulated": false,
+        "routing_path": "ep_deep_reasoning",
+        "response_type": "analysis",
+        "total_tokens": 394,
+        "content_words": 240,
+        "content_preview": "To determine which next step matters more now between more raw benchmarking and defining routing policies from the benchmark results, it's important to consider the current state of the project and the objectives.  1. **",
+        "scores": {
+          "factual_correctness": 5,
+          "structure": 5,
+          "completeness": 5,
+          "keyword_coverage": 3,
+          "hallucination_risk": 5,
+          "executive_usefulness": 4,
+          "response_type_match": 5,
+          "total_quality_score": 27
+        },
+        "error": null
+      }
+    },
+    {
+      "prompt_id": "p10_quality_focus",
+      "provider": "openai",
+      "result": {
+        "success": true,
+        "http_status": 200,
+        "wall_ms": 6532,
+        "latency_ms": 6508,
+        "provider_selected": "openai",
+        "provider_model": "gpt-5.4",
+        "provider_simulated": false,
+        "routing_path": "ep_deep_reasoning",
+        "response_type": "analysis",
+        "total_tokens": 371,
+        "content_words": 219,
+        "content_preview": "Defining routing policy matters more now, assuming you already have enough benchmark signal to distinguish meaningful tradeoffs.  Why: 1. Benchmarks only create value when they change decisions.    If you already know wh",
+        "scores": {
+          "factual_correctness": 5,
+          "structure": 5,
+          "completeness": 5,
+          "keyword_coverage": 3,
+          "hallucination_risk": 5,
+          "executive_usefulness": 4,
+          "response_type_match": 5,
+          "total_quality_score": 27
+        },
+        "error": null
+      }
+    }
+  ]
+}
